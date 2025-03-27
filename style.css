@@ -255,7 +255,7 @@ footer p{
 
 /* Responsive design Start */
 
-@media all and (max-width:360px){
+@media (max-width:375px){
     .header{
         margin: 0;
     }
