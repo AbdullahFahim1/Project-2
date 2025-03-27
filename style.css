@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header .logo a{
+    color: #2F2E41;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.search{
+    position: fixed;
+    top: 18px;
+    right: 255px;
+    width: 280px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 30px rgba(167, 158, 245, 0.3);
+    box-sizing: border-box;
+    z-index: 1;
+    cursor: text ;
+    border-radius: 10% / 50%;
+}
+.searchbox input{
+    width: 200px;
+    height: 25px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    background-color: transparent;
+}
+.searchbox input::placeholder{
+    color: #1d1d1d;
+    font-family: poppins;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 1rem;
+}
+.seaction-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28vw;
+    width: 80%;
+    margin: 80px auto;
+}
+.seaction-1 img{
+    height: 450px;
+}
+.seaction-1 .seaction-logo h1, h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin: 0;
+    font-size: 4rem;
+    line-height: 60px;
+    letter-spacing: 3px;
+    color: #3d3d3d;
+    text-transform: uppercase;
+}
+span{
+    color: #7971F9;
+}
+.seaction-1 .seaction-logo h1{
+    letter-spacing: 28px;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    background-color: #2F2E41;
+    color: white;
+    border-radius: 10% / 50%;
+    cursor: pointer;
+    border: transparent;
+    outline: none;
+    transition: .5s;
+}
+.btn:hover{
+    background-color: #7971F9;
+}
+.sidebar{
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.4);
+    padding: 5px 0;
+    border-radius: 20px;
+    z-index: 1;
+}
+.sidebar a{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 15px;
+}
+.sidebar a i{
+    color: #3F3D56;
+    opacity: .80;
+}
+.sidebar a:hover .fa-facebook{
+    color: #1877F2;
+}
+.sidebar a:hover .fa-instagram{
+    color: #E4405F;
+}
+.sidebar a:hover .fa-youtube{
+    color: #FF0000;
+}
+.sidebar a:hover .fa-cart-shopping{
+    color: #FFA500;
+}
+
+/* Seaction-1 Finish */
+
+/* Section-2 Start */
+
+.seaction-2{
+    width: 80%;
+    box-shadow: 2px 2px 30px rgba(167, 158, 245, 0.3);
+    background-color: #ffffff;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 50px;
+    border-radius: 10px;
+    background-size: 1000px;
+}
+.seaction-2 h3{
+    margin: 20px;
+    font-size: 2rem;
+    color: #2F2E41;
+    font-weight: 700;
+    text-align: center;
+}
+.product-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.product-container .product{
+    width: 350px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 30px;
+    cursor: pointer;
+    position: relative;
+}
+.product-container .product img{
+    height: 180px;
+}
+.product-container .product p{
+    margin-top: 5px;
+    color: #3F3D56;
+}
+.product-container .product a{
+    margin-top: 5px;
+    font-weight: 600;
+    color: #3F3D56;
+}
+.buy-btn{
+    position: absolute;
+    height: 40px;
+    width: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -20px;
+    border-radius: 15% / 50%;
+    color: white !important;
+    background: linear-gradient(120deg, #7971F9, #a166f4  20%);
+    /* animation: fade .2s; */
+    display: none;
+}
+.product:hover .buy-btn{
+    display: flex;
+}
+.product:hover{
+    box-shadow: 3px 3px 30px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 82%;
+    margin: 50px auto;
+    padding: 30px;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.about-us{
+    width: 40%;
+}
+.about-us h1{
+    color: #333333;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.about-us h3{
+    color: #333333;
+    font-weight: 400;
+    font-size: 2rem;
+    width: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.about-us p{
+    color: #bdbdbd;
+    font-size: 1rem;
+}
+footer{
+    margin-top: 50px;
+    background-color: black;
+    padding: 20px;
+}
+footer p{
+    text-align: center;
+    color: white;
+}
+
+/* Responsive design Start */
+
+@media all and (max-width:360px){
+    .header{
+        margin: 0;
+    }
+    .search{
+        position: fixed;
+        top: 18px;
+        right: 30px;
+        width: 160px;
+    }
+    .searchbox {
+        width: 110px;
+        display: flex;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0;
+    }
+    .searchbox .fa-search{
+        margin-top: 6px;
+    }
+    .sidebar{
+        left: 12px;
+        top: 95%;
+        width: 90vw;
+        padding: 1px 5px;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+    }
+    .sidebar a{
+        font-size: 1.2rem;
+        padding: 17px 25px;
+    }
+    .seaction-1{
+        flex-direction: column;
+    }
+    .seaction-1 img{
+        height: 200px;
+    }
+    .seaction-1 .seaction-logo h1, h2{
+        font-size: 3rem;
+        line-height: 50px;
+        letter-spacing: 3px;
+    }
+    .seaction-2{
+        width: 70%;
+    }
+    .product-container .product img{
+        height: 150px;
+    }
+    .about{
+        flex-direction: column-reverse;
+        padding: 0;
+        width: 97%;
+    }
+    .about-us{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .about-us img{
+        height: 200px;
+    }
+    .about-us h3{
+        font-size: 1.6rem;
+        width: 320px;
+    }
+    .about-us h1{
+        font-size: 2.2rem;
+        margin-top: 10px;
+    }
+}
