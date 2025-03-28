@@ -327,3 +327,75 @@ footer p{
         margin-top: 10px;
     }
 }
+@media (max-width:425px){
+    .header{
+        margin: 0;
+    }
+    .search{
+        position: fixed;
+        top: 18px;
+        right: 30px;
+        width: 160px;
+    }
+    .searchbox {
+        width: 110px;
+        display: flex;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 0;
+    }
+    .searchbox .fa-search{
+        margin-top: 6px;
+    }
+    .sidebar{
+        left: 12px;
+        top: 95%;
+        width: 90vw;
+        padding: 1px 5px;
+        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+    }
+    .sidebar a{
+        font-size: 1.2rem;
+        padding: 17px 25px;
+    }
+    .seaction-1{
+        flex-direction: column;
+    }
+    .seaction-1 img{
+        height: 200px;
+    }
+    .seaction-1 .seaction-logo h1, h2{
+        font-size: 3rem;
+        line-height: 50px;
+        letter-spacing: 3px;
+    }
+    .seaction-2{
+        width: 70%;
+    }
+    .product-container .product img{
+        height: 150px;
+    }
+    .about{
+        flex-direction: column-reverse;
+        padding: 0;
+        width: 97%;
+    }
+    .about-us{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .about-us img{
+        height: 200px;
+    }
+    .about-us h3{
+        font-size: 1.6rem;
+        width: 320px;
+    }
+    .about-us h1{
+        font-size: 2.2rem;
+        margin-top: 10px;
+    }
+}
